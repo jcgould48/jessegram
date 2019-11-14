@@ -4,18 +4,41 @@ img {
     height: 100%;
     object-fit: cover;
   }
+
+#app{
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: 
+    "hdr hdr"
+    "nav img"
+    "ftr ftr"
+    ;
+}
+
 #header-bird{
     width:2000px;
     align-content: center;
 }
 
+header{
+    grid-area: hdr;
+}
+#nav{
+    grid-area: nav;
+    background: lightblue
+    
+}
 #images {
     display: grid;
+    grid-area: img;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 
+footer{
+    grid-area: ftr;
+}
 
 @media(max-width: 1000px){
     #images {
