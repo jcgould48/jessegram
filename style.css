@@ -1,2 +1,17 @@
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+#header-bird{
+    width:2000px;
+    align-content: center;
+}
 
+#images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1rem;
+  }
