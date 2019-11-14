@@ -15,3 +15,23 @@ img {
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 1rem;
   }
+
+
+@media(max-width: 1000px){
+    #images {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 1rem;
+      }
+}
+
+@media(max-width: 500px){
+    #images {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 1rem;
+      }
+
+}
