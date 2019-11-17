@@ -6,6 +6,7 @@ img {
   }
 
 #app{
+    display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 15% 70% 15%;
     grid-template-areas: 
@@ -15,17 +16,19 @@ img {
     ;
 }
 
-#header-bird{
-    width:2000px;
-    align-content: center;
+#header{
+    font-size: 300px;
+    font-family: cursive;
+    grid-area: hdr;
+    background: lightcoral;
+    text-align: center;
 }
 
-header{
-    grid-area: hdr;
-}
 #nav{
+
     grid-area: nav;
-    background: lightblue
+    background: lightblue;
+    font-size: 75px;
     
 }
 #images {
@@ -38,15 +41,35 @@ header{
 
 footer{
     grid-area: ftr;
+    text-align: center;
+    font-size: 40px;
 }
+
 
 @media(max-width: 1000px){
     #images {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(11, 1fr);
         grid-gap: 1rem;
       }
+      #header{
+          font-size: 100px;
+          height: 25vh;
+      }
+    #nav{
+        height:20vh;
+      }
+
+    #app{  display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 10% 10% 70% 10%;
+    grid-template-areas: 
+    "hdr hdr"
+    "nav nav"
+    "img img"
+    "ftr ftr"
+    ;}
 }
 
 @media(max-width: 500px){
@@ -56,5 +79,17 @@ footer{
         grid-template-rows: repeat(21, 1fr);
         grid-gap: 1rem;
       }
-
+      #app{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 15% 5% 70% 10%;
+      }
+      #nav{
+        height:20vh;
+        font-size: 25px;
+      }
+      #header{
+        height: 15vh;
+        font-size: 50px
+    }
 }
