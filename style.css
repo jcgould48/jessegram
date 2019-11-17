@@ -43,6 +43,7 @@ footer{
     grid-area: ftr;
     text-align: center;
     font-size: 40px;
+    padding-top: 10%;
 }
 
 
@@ -81,15 +82,15 @@ footer{
       }
       #app{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 15% 5% 70% 10%;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: 10% 5% 75% 10%;
       }
       #nav{
-        height:20vh;
+        height:25vh;
         font-size: 25px;
       }
       #header{
         height: 15vh;
-        font-size: 50px
+        font-size: 50px;
     }
 }
