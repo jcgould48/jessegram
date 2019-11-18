@@ -56,10 +56,10 @@ footer{
       }
       #header{
           font-size: 100px;
-          height: 25vh;
+          height: 100vh;
       }
     #nav{
-        height:20vh;
+        height:100vh;
       }
 
     #app{  display: grid;
@@ -86,11 +86,11 @@ footer{
         grid-template-rows: 10% 5% 75% 10%;
       }
       #nav{
-        height:25vh;
+        height:100%;
         font-size: 25px;
       }
-      #header{
-        height: 15vh;
+      #header{  
+        height: 100%;
         font-size: 50px;
     }
 }
